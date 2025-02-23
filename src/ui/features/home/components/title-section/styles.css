@@ -1,0 +1,40 @@
+#title-section {
+  text-align: center;
+  width: calc(min(90rem, 90%));
+  margin-inline: auto;
+}
+#title-section span,
+#title-section p,
+#title-section h2,
+#title-section h3 {
+  letter-spacing: 0.035rem;
+}
+#title-section p {
+  line-height: 1.6;
+  color: #a3a3a3;
+  max-width: 50rem;
+  margin: 0 auto;
+  font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+}
+#title-section .bg-watermark {
+  color: #1f1f1f;
+  font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
+  font-weight: 800;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translatex(-50%) translatey(-30%);
+  user-select: none;
+  letter-spacing: 0.5rem;
+}
+#title-section span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.2rem;
+  color: #a3a3a3;
+}
+#title-section h2 {
+  font-size: clamp(3.5rem, 3rem + 1.6vw, 5rem);
+  margin-top: -0.625rem;
+  color: #fff;
+}

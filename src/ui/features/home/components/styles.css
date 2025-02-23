@@ -1,0 +1,28 @@
+/* Conteneur de la section */
+.home-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Conteneur du texte principal */
+.home-title-heading {
+  position: relative;
+  z-index: 2;
+}
+
+/* Style pour le texte "All-new" */
+.home-title-fade {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Style pour le texte "CSS Pro" */
+.home-title-focus {
+  display: block;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
