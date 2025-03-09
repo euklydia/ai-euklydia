@@ -1,0 +1,346 @@
+/* ============================================================== 
+    # Accordion Portfolio 
+=================================================================== */
+.banner-style-two-area.hero {
+  padding: 0;
+}
+.accrdion-portfolio-area,
+.accrdion-portfolio-area div {
+  height: 100%;
+}
+
+.accordion-portfolio-lists li {
+  overflow: hidden;
+  border: 7px solid var(--dark);
+  border-bottom: none;
+}
+
+.accordion-portfolio-lists {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+  min-height: auto;
+  position: relative;
+}
+
+.accordion-portfolio-lists {
+  height: 100%;
+  padding-top: 130px;
+  padding-bottom: 25px;
+  width: 98%;
+}
+
+.accordion-portfolio-lists li {
+  cursor: grab;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 1.6em;
+  list-style: none;
+  width: 16.66666667%;
+  height: inherit;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.accordion-portfolio-lists li::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--bg-gradient);
+  z-index: -1;
+  opacity: 0.75;
+  transition: all 0.35s ease-in-out;
+}
+
+.accordion-portfolio-lists li:nth-child(1)::after {
+  background: #013133;
+}
+.accordion-portfolio-lists li:nth-child(2)::after {
+  background: #015646;
+}
+
+.accordion-portfolio-lists li:nth-child(3)::after {
+  background: #25b782;
+}
+
+.accordion-portfolio-lists li:nth-child(4)::after {
+  background: #0ff487;
+}
+
+.accordion-portfolio-lists li:nth-child(5)::after {
+  background: #88e5c3;
+}
+
+.accordion-portfolio-lists li:nth-child(6)::after {
+  background: #bce8d4;
+}
+.accordion-portfolio-lists li.out::after {
+  opacity: 0;
+}
+
+.accordion-portfolio-lists li .accordion-overlay.big-section {
+  width: 100%;
+}
+
+.accordion-portfolio-lists li.out {
+  width: 50%;
+}
+
+.accrdion-portfolio-area .accordion-overlay {
+  display: inline-block;
+  height: auto;
+  min-height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-portfolio-lists li h3 {
+  position: absolute;
+  left: 50%;
+  margin: 0 !important;
+  font-weight: 700;
+  padding: 0;
+  transform: translateX(-50%);
+  top: 50px;
+  writing-mode: vertical-rl;
+  transition: all 0.35s ease-in-out;
+  font-size: 22px;
+}
+
+.accordion-portfolio-lists li.out h3 {
+  writing-mode: inherit;
+  left: auto;
+  transform: inherit;
+  right: 50px;
+  display: none;
+  border-radius: 10px;
+}
+
+.accordion-portfolio-lists li > span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  font-size: 80px;
+  bottom: -50px;
+  -webkit-text-stroke: 1px var(--white);
+  color: transparent;
+  transition: all 0.35s ease-in-out;
+}
+
+.accordion-portfolio-lists li.out > span {
+  bottom: -200px;
+  visibility: visible;
+  opacity: 0;
+  transition-duration: 0.1s;
+}
+
+.accordion-portfolio-lists li::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 30%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
+    repeat scroll 0 0;
+  z-index: -1;
+  transition: all 0.35s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion-portfolio-lists li.out::before {
+  height: 80%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.accrdion-portfolio-area .accordion-overlay span {
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  padding-left: 115px;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accrdion-portfolio-area .out .accordion-overlay span {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.15s;
+}
+
+.accrdion-portfolio-area .accordion-overlay span::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: var(--white);
+}
+
+.accrdion-portfolio-area .accordion-overlay h2 {
+  margin: 0;
+  font-weight: 900;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accrdion-portfolio-area .out .accordion-overlay h2 {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.15s;
+}
+
+.accrdion-portfolio-area .accordion-overlay p {
+  z-index: 1;
+  position: relative;
+  color: var(--white);
+  margin: 0;
+  margin-top: 15px;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(50px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accrdion-portfolio-area .out .accordion-overlay p {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateX(0);
+  transition-delay: 0.15s;
+}
+
+.accrdion-portfolio-area .accordion-overlay > a {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 68px;
+  background: var(--dark);
+  border-radius: 50%;
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(25px);
+  font-size: 30px;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.accrdion-portfolio-area .accordion-overlay a i {
+  transform: rotate(-45deg);
+  -webkit-text-stroke: 1px var(--white);
+  color: transparent;
+}
+
+.accrdion-portfolio-area .out .accordion-overlay a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 991px) {
+  /* Accordion Portfolio */
+  .accordion-portfolio-lists {
+    padding: 30px 15px;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .accrdion-portfolio-area,
+  .accrdion-portfolio-area div {
+    height: inherit;
+  }
+
+  .accordion-portfolio-lists li {
+    width: 100%;
+    height: 90px;
+    display: block;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 35px;
+  }
+
+  .accordion-portfolio-lists li h3 {
+    writing-mode: inherit;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+    left: 100px;
+    text-align: right;
+  }
+
+  .accordion-portfolio-lists li > span {
+    left: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 60px;
+    bottom: auto;
+  }
+
+  .accordion-portfolio-lists li.out {
+    width: 100%;
+    padding-top: 200px;
+    height: auto;
+  }
+
+  .accordion-portfolio-lists li.out h3 {
+    display: none;
+  }
+
+  .accrdion-portfolio-area .out .accordion-overlay h2 {
+    font-size: 24px;
+  }
+
+  .accordion-portfolio-lists li.out::before {
+    height: 100%;
+  }
+
+  .accordion-portfolio-lists li::after {
+    opacity: 0.8;
+  }
+
+  .accrdion-portfolio-area .out .accordion-overlay p {
+    padding: 0;
+  }
+}
