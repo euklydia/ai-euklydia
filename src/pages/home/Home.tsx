@@ -6,8 +6,8 @@ import { homeHead } from "../../data/SEO";
 export const Home = () => {
   return (
     <>
+      <MetaHead {...homeHead} />
       <div className="smooth-scroll-container">
-        <MetaHead {...homeHead} />
         <Header />
 
         <HeroSection />

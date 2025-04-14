@@ -11,7 +11,7 @@ interface DataType {
 }
 
 export const SingleBlog = ({ blog }: { blog: DataType }) => {
-  const { id, thumb, author, dateFull, comments, title } = blog;
+  const { id, thumb, dateFull, title } = blog;
 
   return (
     <>
@@ -19,7 +19,7 @@ export const SingleBlog = ({ blog }: { blog: DataType }) => {
         <div className="thumb">
           <Link to={`/blog-single-with-sidebar/${id}`}>
             <img
-              src={`/ai-euklydia/src/assets/images/${thumb}`}
+              src={`/ai-euklydia/images/home/${thumb}`}
               alt="Image Not Found"
               width={800}
               height={1000}
@@ -28,16 +28,6 @@ export const SingleBlog = ({ blog }: { blog: DataType }) => {
           <div className="date">{dateFull}</div>
         </div>
         <div className="content">
-          <div className="meta">
-            <ul>
-              <li>
-                <Link to="#">{author}</Link>
-              </li>
-              <li>
-                <Link to="#">{comments} Comments</Link>
-              </li>
-            </ul>
-          </div>
           <h3>
             <Link to={`/blog-single-with-sidebar/${id}`}>{title}</Link>
           </h3>

@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "title": "Research",
+        "title": "AI Diagnosis",
         "thumb": "5.png",
         "thumbLight": "27.png",
-        "text": "Remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position."
+        "text": "We analyze your current workflows across the Five Pillars of Business Success (Finance, Strategy, People, Marketing, Operations) to identify AI opportunities and inefficiencies."
     },
     {
         "id": 2,
-        "title": "Concept",
+        "title": "Intelligent Blueprint",
         "thumb": "6.png",
         "thumbLight": "28.png",
-        "text": "Terminators on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position."
+        "text": "We develop a tailored AI strategy, selecting the most impactful pillar(s) for integration and aligning AI solutions with your business objectives."
     },
     {
         "id": 3,
-        "title": "Implement",
+        "title": "Smart Implementation",
         "thumb": "7.png",
         "thumbLight": "29.png",
-        "text": "Remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position."
+        "text": "Our experts seamlessly deploy AI solutions, ensuring smooth integration into your existing processes with minimal disruption and maximum efficiency."
     },
     {
         "id": 4,
-        "title": "Handover",
+        "title": "Impact Optimization",
         "thumb": "8.png",
         "thumbLight": "30.png",
-        "text": "Trensination on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position."
+        "text": "We track KPIs, measure AI performance, and continuously fine-tune strategies to ensure sustained growth, profitability, and competitive advantage."
     }
 ]

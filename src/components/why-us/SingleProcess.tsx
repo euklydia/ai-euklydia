@@ -12,14 +12,14 @@ export const SingleProcess = ({ process }: { process: DataType }) => {
       <div className="item">
         <div className="icon">
           <img
-            src={`/ai-euklydia/src/assets/icons/${thumb}`}
+            src={`/ai-euklydia/icons/${thumb}`}
             alt="Icon"
             width={200}
             height={230}
           />
         </div>
         <h4>{title}</h4>
-        <p>{text}</p>
+        <p className="green">{text}</p>
       </div>
     </>
   );

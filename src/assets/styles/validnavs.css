@@ -472,7 +472,6 @@ nav.navbar.validnavs.logo-less .navbar-brand {
 }
 
 nav.navbar.validnavs {
-  background-color: var(--white);
   border-radius: 0;
   border: none;
   margin: 0;
@@ -1076,7 +1075,7 @@ body.bg-dark.on-side nav.navbar::after {
   right: 2px;
   width: 56px;
   border: none;
-  background: var(--bg-primary);
+  background: #1cb0a0;
   border-radius: 5px;
   color: var(--primary-text);
   font-size: 30px;
@@ -1104,7 +1103,7 @@ body.bg-dark.on-side nav.navbar::after {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background: var(--bg-primary) !important;
+  background: #1cb0a0 !important;
   color: var(--white);
 }
 
@@ -1112,10 +1111,10 @@ body.bg-dark.on-side nav.navbar::after {
   height: 17px;
 }
 
+ul.footer-social li a:hover,
 .navbar .side .widget.social li a:hover {
   background: var(--bg-primary) none repeat scroll 0 0 !important;
   color: var(--white);
-  border-color: var(--dark);
 }
 
 .attr-nav .fa-search {
@@ -1158,7 +1157,7 @@ body.bg-dark.on-side nav.navbar::after {
 }
 
 .nav-full-width .side .widget.address ul li strong {
-  color: var(--color-paragraph);
+  color: #1cb0a0;
 }
 
 .bg-dark .nav-full-width .side .widget.address ul li strong {
@@ -2325,7 +2324,7 @@ nav.navbar.validnavs.brand-center {
   transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
   visibility: hidden;
   opacity: 0;
-  background: var(--bg-gray);
+  background: #002825;
   overflow: hidden;
 }
 
@@ -2369,7 +2368,7 @@ nav.navbar.validnavs.brand-center {
 }
 
 .nav-full-width.navbar .navbar-collapse.collapse a {
-  color: var(--color-paragraph);
+  color: #1cb0a0;
   text-transform: none;
 }
 
@@ -2385,14 +2384,15 @@ nav.navbar.validnavs.brand-center {
   height: 45px;
   width: 45px;
   line-height: 47px;
-  background: #00e37d;
+  background: #1cb0a0;
   text-align: center;
   border-radius: 50%;
   margin-left: 11px;
-  color: var(--primary-text);
+  color: #004c4a;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid white;
 }
 
 .nav-full-width.navbar .navbar-collapse.collapse .right-info ul li a:hover {
@@ -2438,7 +2438,7 @@ nav.navbar.validnavs.brand-center {
 }
 
 .nav-full-width.navbar .navbar-collapse.collapse .right-info ul li a:hover {
-  background: var(--color-primary) !important;
+  background: #02a486 !important;
   color: var(--white);
 }
 
@@ -2738,7 +2738,6 @@ ul.simple-menu-list > li i {
     padding: 0;
     position: absolute !important;
     border-bottom: 1px solid #e7e7e7;
-    background: var(--white) !important;
   }
 
   .bg-dark nav.navbar.validnavs {

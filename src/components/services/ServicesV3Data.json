@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "activeClass": "out",
+        "icon": "12.png",
+        "iconLight": "31.png",
+        "titleFirst": "Innovation",
+        "titleLast": "Optimization",
+        "text": "Explained jas something an regular keep dissimilar. Perfect get joy you instrument out reasonably. Again keeps at no meant stuff. Stuff comort for avobe perfection.",
+        "number": "01"
+    },
+    {
+        "id": 2,
+        "activeClass": "",
+        "icon": "13.png",
+        "iconLight": "32.png",
+        "titleFirst": "Eco-friendly",
+        "titleLast": "Development",
+        "text": "Explained jas something an regular keep dissimilar. Perfect get joy you instrument out reasonably. Again keeps at no meant stuff. Stuff comort for avobe perfection.",
+        "number": "02"
+    },
+    {
+        "id": 3,
+        "activeClass": "",
+        "icon": "14.png",
+        "iconLight": "34.png",
+        "titleFirst": "Creativity",
+        "titleLast": "Latest Technology",
+        "text": "Explained jas something an regular keep dissimilar. Perfect get joy you instrument out reasonably. Again keeps at no meant stuff. Stuff comort for avobe perfection.",
+        "number": "03"
+    },
+    {
+        "id": 3,
+        "activeClass": "",
+        "icon": "13.png",
+        "iconLight": "34.png",
+        "titleFirst": "Agility",
+        "titleLast": "Latest Technology",
+        "text": "Explained jas something an regular keep dissimilar. Perfect get joy you instrument out reasonably. Again keeps at no meant stuff. Stuff comort for avobe perfection.",
+        "number": "03"
+    }
+]

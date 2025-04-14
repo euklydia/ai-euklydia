@@ -13,7 +13,7 @@
   display: block;
   width: 40px;
   height: 40px;
-  background-color: var(--bg-secondary);
+  background-color: #1cb0a0;
   animation: loaderBlock 0.8s infinite ease-in-out both;
 }
 .loader span:nth-child(1) {
@@ -50,7 +50,7 @@
     transform: rotate(0);
   }
   55% {
-    background-color: var(--bg-secondary);
+    background-color: #1cb0a0;
   }
   100% {
     transform: rotate(-90deg);
@@ -75,7 +75,7 @@
     transform: rotate(0);
   }
   55% {
-    background-color: var(--bg-secondary);
+    background-color: #1cb0a0;
   }
   100% {
     transform: rotate(90deg);

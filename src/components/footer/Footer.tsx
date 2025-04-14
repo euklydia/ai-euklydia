@@ -86,7 +86,7 @@ export const Footer = () => {
       <footer className={`style-two`}>
         <div className="container">
           <div className="f-items">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-lg-6 footer-item about pr-120 pr-md-15 pr-xs-15 pr-md-15 pr-xs-15">
                 <div className="top">
                   <h2>Get Support?</h2>
@@ -94,16 +94,6 @@ export const Footer = () => {
                     <i className="fas fa-long-arrow-right" />
                   </a>
                 </div>
-                <ul className="address-list">
-                  <li>
-                    <h4>Australia</h4>
-                    <p>Travel World House, Level 7, 17 Jones St, NSW, 2060</p>
-                  </li>
-                  <li>
-                    <h4>Dubai</h4>
-                    <p>Sheikh Mohammed bin Salah, #234 B - Downtown - Dubai</p>
-                  </li>
-                </ul>
               </div>
               <div className="col-lg-5 offset-lg-1 footer-item">
                 <h4 className="widget-title">Useful Link</h4>

@@ -87,21 +87,21 @@ Sidebar heading:  22px 'Barlow', sans-serif
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital:wght@100;200;300;400;500;600;700;800&display=swap");
 
 /* Varialbes */
 :root {
-  --font-default: "Barlow", sans-serif;
-  --font-heading: "Barlow", sans-serif;
+  --font-default: "Lato", sans-serif;
+  --font-heading: "Lato", sans-serif;
   --fontawesome: "Font Awesome 5 Pro";
 
-  --bg-primary: #00211c;
+  --bg-primary: #004c4a;
   --bg-secondary: #00372c;
   --primary-text: #ffffff;
   --secondary-text: #88e5c3;
 
   --black: #000000;
-  --dark: #00211c;
+  --dark: #004c4a;
   --dark-secondary: #00211c;
   --dark-optional: #2a2d32;
   --white: #ffffff;
@@ -377,11 +377,15 @@ button {
 }
 
 p {
-  color: var(--color-paragraph);
+  color: white;
   margin: 0 0 25px;
   text-transform: none;
   font-weight: 400;
   font-family: var(--font-default);
+}
+
+.footer-bottom p {
+  color: white;
 }
 
 /* ============================================================== 
@@ -765,7 +769,7 @@ p {
 
 .title {
   font-weight: 600;
-  font-size: 60px !important;
+  font-size: 45px !important;
   margin-top: -15px;
 }
 
@@ -958,19 +962,6 @@ p {
   .blurry-shape-left {
     position: relative;
     z-index: 1;
-  }
-
-  .blurry-shape-left::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    height: 200px;
-    width: 200px;
-    background: var(--color-primary);
-    z-index: -1;
-    border-radius: 50%;
-    filter: blur(120px);
   }
 
   .blurry-shape-right {
@@ -1897,8 +1888,8 @@ p {
 
 .btn.btn-theme {
   color: var(--primary-text);
-  border: none;
-  background: var(--color-primary);
+  background: #1cb0a0;
+  padding: 2px 15px !important;
 }
 
 .btn.btn-theme::after {
@@ -1924,10 +1915,12 @@ p {
 
 .bg-dark .btn.btn-theme:hover {
   color: var(--primary-text);
+  background: #1cb0a0;
 }
 
 .btn.btn-theme:hover {
   color: var(--white);
+  background: #1cb0a0;
 }
 
 .banner-style-four .btn.btn-theme::after {
@@ -3066,7 +3059,6 @@ a.btn-round-animation:hover::after {
 =================================================================== */
 .text-scroll-animation .text {
   width: 100%;
-  color: rgb(0, 0, 0, 0.4);
   background: linear-gradient(
       to right,
       var(--primary-text),
@@ -3085,7 +3077,6 @@ a.btn-round-animation:hover::after {
 }
 
 .bg-dark .text-scroll-animation .text {
-  color: rgb(255, 255, 255, 0.2);
   background: linear-gradient(to right, var(--white), var(--white)) no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
@@ -4102,11 +4093,11 @@ a.btn-round-animation:hover::after {
 .banner-two-content .item-title strong::after {
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 0px;
   content: "";
   height: 100%;
   width: 100%;
-  background: var(--bg-gradient);
+  background: #1cb0a0;
   z-index: -1;
   border-radius: 10px;
 }
@@ -6250,7 +6241,7 @@ ul.list-style-two li:last-child {
   content: "";
   height: 100%;
   width: 50%;
-  background: var(--bg-gray);
+  background: #013a37;
   z-index: -1;
 }
 
@@ -6259,8 +6250,7 @@ ul.list-style-two li:last-child {
 }
 
 .experience-card {
-  border: 2px solid var(--color-primary);
-  padding: 80px 60px;
+  padding: 80px 30px;
 }
 
 .bg-dark .experience-card {
@@ -6315,7 +6305,7 @@ ul.list-style-two li:last-child {
 }
 
 .about-style-three-info .left {
-  min-width: 30%;
+  min-width: 25%;
 }
 
 h4.sub-title-border {
@@ -6341,8 +6331,8 @@ h4.sub-title-border::after {
 }
 
 h4.sub-title-border strong {
-  background: var(--white);
-  padding-right: 15px;
+  background: #1cb0a0;
+  padding: 0px 7px;
   color: var(--primary-text);
 }
 
@@ -6362,7 +6352,7 @@ h4.sub-title-border strong {
 }
 
 .about-style-three-info .d-flex {
-  gap: 50px;
+  gap: 25px;
 }
 
 .scroll-shape {
@@ -6371,7 +6361,7 @@ h4.sub-title-border strong {
   bottom: 100px;
   height: 100px;
   width: 60px;
-  background: var(--bg-gradient);
+  background-color: #1cb0a0;
 }
 
 .scroll-shape::after {
@@ -6381,7 +6371,7 @@ h4.sub-title-border strong {
   content: "";
   height: 60px;
   width: 60px;
-  background: var(--white);
+  background: #52ddc9;
   z-index: -1;
 }
 
@@ -6406,14 +6396,12 @@ h4.sub-title-border strong {
   content: "";
   height: 80%;
   width: 100px;
-  background: var(--bg-primary);
+  background: #1cb0a0;
   z-index: -1;
-  opacity: 0.1;
 }
 
 .bg-dark .move-shape::after {
-  background: var(--white);
-  opacity: 0.1;
+  background: #1cb0a0;
 }
 
 .move-shape::before {
@@ -6423,13 +6411,11 @@ h4.sub-title-border strong {
   content: "";
   height: 50px;
   width: 50px;
-  background: var(--bg-primary);
-  opacity: 0.1;
+  background: #52ddc9;
 }
 
 .bg-dark .move-shape::before {
-  background: var(--white);
-  opacity: 0.1;
+  background: #52ddc9;
 }
 
 .about-style-four-info p {
@@ -7313,7 +7299,7 @@ a.btn-full i {
   z-index: 1;
   overflow: hidden;
   margin: 0;
-  padding: 60px 37px;
+  padding: 30px 25px;
   list-style: none;
   width: 30%;
   height: inherit;
@@ -7373,8 +7359,8 @@ a.btn-full i {
 }
 
 .service-three-content .icon img {
-  height: 70px;
-  margin-bottom: 50px;
+  height: 150px;
+  margin-bottom: 30px;
 }
 
 .service-three-content .info h4 {
@@ -7574,19 +7560,20 @@ a.btn-full i {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  background: #1cb0a0;
 }
 
 .services-nav .nav-items {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #dddddd;
+  border: 1px solid #013a37;
   overflow: hidden;
   border-radius: 30px;
 }
 
 .bg-dark .services-nav .nav-items {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #013a37;
 }
 
 .services-button-prev {
@@ -7605,6 +7592,7 @@ a.btn-full i {
   font-family: "Font Awesome 5 Pro";
   transform: translate(-50%, -50%);
   margin-top: 1px;
+  color: white;
 }
 
 .services-button-prev::after {
@@ -7615,6 +7603,7 @@ a.btn-full i {
   font-family: "Font Awesome 5 Pro";
   transform: translate(-50%, -50%);
   margin-top: 1px;
+  color: white;
 }
 
 .services-nav {
@@ -7727,7 +7716,7 @@ a.btn-full i {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  color: transparent !important;
+  color: #000000 !important;
   -webkit-text-stroke: 1px #7d7676;
   text-transform: uppercase;
   font-size: 160px;
@@ -7745,7 +7734,7 @@ a.btn-full i {
 
 .image-hover-item .item-content span {
   display: inline-block;
-  background: var(--bg-gradient);
+  background: #1cb0a0;
   height: 60px;
   width: 60px;
   min-width: 60px;
@@ -7782,17 +7771,16 @@ a.btn-full i {
 
 .service-style-six-items ul li {
   display: flex;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     var(--bg-gray) 20%,
     #ffffff 100%
-  ) !important;
+  ) !important; */
   padding: 80px;
   margin-bottom: 30px;
-  border-radius: 30px;
+
   overflow: hidden;
   position: relative;
-  border: 1px solid #e7e7e7;
 }
 
 .bg-dark .service-style-six-items ul li {
@@ -7824,7 +7812,7 @@ a.btn-full i {
   bottom: -45px;
   font-size: 80px;
   font-weight: 900;
-  color: #595959;
+  color: #c3c3c3;
 }
 
 .service-style-six-items ul li .item-title span {
@@ -10522,7 +10510,7 @@ h2.text-large-gradient {
 }
 
 .faq-style-one button.accordion-button {
-  color: var(--primary-text);
+  color: #5fffe8;
   font-size: 20px;
   font-weight: 700 !important;
   padding: 0 !important;
@@ -11007,7 +10995,7 @@ ul.contact-list li .info {
 .award-item {
   padding: 50px;
   width: 100%;
-  background: var(--bg-secondary);
+  background: #1cb0a0;
   box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -11024,7 +11012,7 @@ ul.contact-list li .info {
   display: inline-block;
   font-size: 50px;
   margin-bottom: 15px;
-  color: var(--color-primary);
+  color: white;
 }
 
 .award-item h4 {
@@ -11624,7 +11612,7 @@ ul.contact-list li .info {
 
 .pf-tags span:first-child {
   border-radius: 30px;
-  background: var(--color-primary);
+  background: #1cb0a0;
   color: var(--primary-text);
 }
 
@@ -11760,6 +11748,7 @@ ul.contact-list li .info {
 .portfolio-style-five-area {
   position: relative;
   z-index: 1;
+  background: #013a37;
 }
 
 .portfolio-style-five-area::after {
@@ -11769,7 +11758,7 @@ ul.contact-list li .info {
   content: "";
   height: 20%;
   width: 100%;
-  background: var(--white);
+  background: #013a37;
 }
 
 .portfolio-style-five {
@@ -12731,7 +12720,7 @@ ul.list-disc li {
   position: absolute;
   left: 40px;
   top: 40px;
-  background: var(--bg-gradient);
+  background: #1cb0a0;
   padding: 6px 20px;
   font-weight: 600;
   color: var(--primary-text);
@@ -12890,7 +12879,7 @@ ul.list-disc li {
   content: "";
   height: 50%;
   width: 50%;
-  background: var(--bg-gradient);
+  background: #1cb0a0;
   z-index: -1;
   transition: all 0.25s ease-in-out;
   border-radius: 50%;
@@ -12942,7 +12931,7 @@ ul.list-disc li {
 }
 
 .bg-theme .btn-large-border a::after {
-  background: var(--bg-primary);
+  background: #1cb0a0;
 }
 
 .bg-theme .btn-large-border a:hover {
@@ -13150,7 +13139,7 @@ footer {
 }
 
 footer.style-two {
-  background: #00372c;
+  background: #002825;
 }
 
 @media (min-width: 850px) {
@@ -13221,7 +13210,7 @@ ul.useful-link li {
 
 ul.useful-link li a {
   font-weight: 400;
-  color: var(--color-paragraph);
+  color: #1cb0a0;
 }
 
 .bg-dark ul.useful-link li a {
@@ -13241,12 +13230,8 @@ ul.useful-link li a {
 .footer-item .top h2 {
   margin: 0;
   font-size: 70px;
-  color: var(--color-primary);
-  background: linear-gradient(
-    90deg,
-    var(--primary-text) 20%,
-    var(--color-secondary) 50%
-  );
+  color: #1cb0a0;
+  background: linear-gradient(90deg, var(--primary-text) 20%, #1cb0a0 50%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -13268,7 +13253,7 @@ ul.useful-link li a {
   width: 100px;
   text-align: center;
   line-height: 120px;
-  background: var(--color-primary);
+  background: #1cb0a0;
   min-width: 100px;
   border-radius: 50%;
 }
@@ -13308,7 +13293,7 @@ form.newsletter {
 
 form.newsletter input,
 form.newsletter input:focus {
-  background: var(--bg-primary);
+  background: #1cb0a0;
   border: none;
   box-shadow: none;
   padding-left: 25px;
@@ -13322,7 +13307,7 @@ form.newsletter input:focus {
 
 form.newsletter button {
   padding: 0;
-  background: var(--bg-primary);
+  background: #1cb0a0;
   position: absolute;
   right: 0;
   top: 0;
@@ -13396,7 +13381,7 @@ form.newsletter.style-two {
   border-radius: 0;
   outline: 1px solid #e7e7e7;
   border-radius: 10px;
-  background: var(--bg-primary);
+  background: #1cb0a0;
 }
 
 .bg-gray form.newsletter.style-two {
@@ -13439,10 +13424,10 @@ ul.footer-social li a {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  background: var(--bg-primary);
+  background: #1cb0a0;
   border-radius: 50%;
-  color: var(--primary-text);
-  border: 1px solid #e7e7e7;
+  color: #004c4a;
+  border: 2px solid white;
 }
 
 .bg-dark ul.footer-social li a {
@@ -14076,6 +14061,8 @@ ul.footer-social li a img {
   .service-style-six-items ul li {
     padding: 60px;
     position: relative;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
   }
 
   /* Team Style One */
@@ -14956,6 +14943,9 @@ ul.footer-social li a img {
 
   .service-style-six-items ul li {
     position: relative;
+    display: block;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
   }
 
   /* Service Details */
@@ -16499,18 +16489,16 @@ ul.footer-social li a img {
 
   .service-style-six-items ul li {
     display: block;
-    padding: 50px 37px;
+    padding: 35px 25px;
     position: relative;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
   }
 
   .service-style-six-items ul li .icon {
     min-width: auto;
     margin: 0;
     margin-bottom: 30px;
-  }
-
-  .service-style-six-items ul li .icon img {
-    height: 80px;
   }
 
   .service-style-six-items ul li .item-title span {
@@ -18058,4 +18046,27 @@ button.Toastify__close-button {
   .portfolio-style-two {
     width: 100%;
   }
+}
+
+.experience-card.my-linear-bg,
+.card-style-one.my-linear-bg {
+  background: linear-gradient(to right, #1cb0a0, #1d424b);
+}
+
+.service-style-three-items li,
+.service-style-six-items ul li.gradient-top-bottom {
+  background: linear-gradient(to bottom, #1cb0a0, #1d424b) !important;
+}
+
+.text-scroll-animation p.text.white,
+p.white {
+  color: white;
+}
+
+.bg-secondary-darkness {
+  background: #1d424b !important;
+}
+
+p.green {
+  color: #5fffe8;
 }

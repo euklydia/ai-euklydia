@@ -18,7 +18,6 @@ button.btn {
   background: #e7edf8;
   position: relative;
   z-index: 1;
-  padding: 17px 50px !important;
   background: var(--color-primary);
   border: none !important;
 }

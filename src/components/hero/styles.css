@@ -11,7 +11,7 @@
 
 .accordion-portfolio-lists li {
   overflow: hidden;
-  border: 7px solid var(--dark);
+  border: 7px solid #004c4a;
   border-bottom: none;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .accordion-portfolio-lists li:nth-child(1)::after {
-  background: #013133;
+  background: #004c4a;
 }
 .accordion-portfolio-lists li:nth-child(2)::after {
   background: #015646;
