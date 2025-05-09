@@ -1,0 +1,51 @@
+.green-accordion-group {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-family: sans-serif;
+}
+
+.green-accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 128, 0, 0.05);
+}
+
+.green-accordion-header {
+  width: 100%;
+  background: linear-gradient(90deg, #1cb0a0 0%, #004c4a 100%);
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.green-chevron {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.green-rotated {
+  transform: rotate(180deg);
+}
+
+.green-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 16px;
+  background: linear-gradient(90deg, #1cb0a0 0%, #004c4a 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.green-accordion-content.green-open {
+  max-height: 200px;
+  padding: 8px 12px 12px;
+}

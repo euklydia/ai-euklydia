@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "thumb": "Baya.jpg",
         "author": "Md Sohag",
         "dateFull": "22 March, 2025",
@@ -9,7 +9,7 @@
         "title": "AI agent : Key to Scalable Low-Cost Success"
     },
     {
-        "id": 2,
+        "id": "/blog/AI-supports-mental-health",
         "thumb": "Zied.jpg",
         "author": "Istiak Ahmed",
         "dateFull": "15 April, 2025",
@@ -18,7 +18,7 @@
         "title": "AI, Mental Health, and Human Culture at Euklydia"
     },
     {
-        "id": 3,
+        "id": "/blog/first-collaboration-designer-AI-agent",
         "thumb": "Baya-et-nesrine.jpg",
         "author": "Md Sohag",
         "dateFull": "25 April, 2025",

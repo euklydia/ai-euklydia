@@ -4,6 +4,10 @@ import { Service } from "../pages/service/Service";
 import { OurDNA } from "../pages/ourDNA/OurDNA";
 import { GreenTech } from "../pages/green-tech/GreenTech";
 import { OurDNA2 } from "../pages/ourDNA/OurDNA2";
+import { Academy } from "../pages/academy/Academy";
+import { Contact } from "../pages/contact/Contact";
+import { OurValue } from "../pages/our-value/OurValue";
+import { Blog01 } from "../pages/blogs/blog01";
 
 export const Routers = () => {
   return (
@@ -11,8 +15,19 @@ export const Routers = () => {
       <Route path="/" element={<Home />}></Route>
       <Route path="/service" element={<Service />}></Route>
       <Route path="/our-dna" element={<OurDNA />}></Route>
-      <Route path="/green-tech" element={<GreenTech />}></Route>
+      <Route path="/GreenTech" element={<GreenTech />}></Route>
       <Route path="/green" element={<OurDNA2 />}></Route>
+      <Route path="/academy" element={<Academy />}></Route>
+      <Route path="/our-value" element={<OurValue />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
+      <Route
+        path="/blog/first-collaboration-designer-AI-agent"
+        element={<Blog01 />}
+      ></Route>
+      <Route
+        path="/blog/AI-supports-mental-health"
+        element={<Blog01 />}
+      ></Route>
     </Routes>
   );
 };

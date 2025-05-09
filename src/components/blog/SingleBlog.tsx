@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 interface DataType {
-  id?: number;
+  id: string;
   thumb?: string;
   author?: string;
   dateFull?: string;
@@ -17,7 +17,7 @@ export const SingleBlog = ({ blog }: { blog: DataType }) => {
     <>
       <div className="home-blog-one">
         <div className="thumb">
-          <Link to={`/blog-single-with-sidebar/${id}`}>
+          <Link to={id}>
             <img
               src={`/ai-euklydia/images/home/${thumb}`}
               alt="Image Not Found"
@@ -29,12 +29,9 @@ export const SingleBlog = ({ blog }: { blog: DataType }) => {
         </div>
         <div className="content">
           <h3>
-            <Link to={`/blog-single-with-sidebar/${id}`}>{title}</Link>
+            <Link to={id}>{title}</Link>
           </h3>
-          <Link
-            to={`/blog-single-with-sidebar/${id}`}
-            className="button-regular"
-          >
+          <Link to={id} className="button-regular">
             Continue Reading
           </Link>
         </div>

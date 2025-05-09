@@ -9,7 +9,7 @@ export const WhyUs = ({ sectionClass }: DataType) => {
   return (
     <>
       <div className={`${sectionClass ? sectionClass : ""}`}>
-        <div className="container">
+        <div className="container" style={{ maxWidth: "1250px" }}>
           <div className="row align-center">
             <div className="col-lg-5">
               <div className="thumb-style-one">

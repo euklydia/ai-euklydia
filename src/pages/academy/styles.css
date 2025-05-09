@@ -1,0 +1,214 @@
+.academy-hero-background {
+  top: 0; /* or any offset from the top */
+  background-image: url("/public/images/academy/academy.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Set a height for the div */
+  z-index: -1; /* Optional: keeps it above other elements */
+  padding-top: 130px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.academy-container {
+  width: 996px;
+  margin: auto;
+}
+
+.academy-hero-background .academy-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.academy-hero-background .academy-content p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.why-euklydia-academy {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 80px auto 250px;
+}
+
+.why-card-euklydia-academy {
+  width: 300px;
+  background: linear-gradient(180deg, #004c4a 0%, #1cb0a0 100%);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: justify;
+}
+
+.why-card-euklydia-academy.is-image-bg {
+  background-image: url("/public/images/academy/image-bg.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  top: 150px;
+  position: relative;
+}
+
+.why-card-euklydia-academy .academy-number {
+  font-size: 50px;
+  color: #5fffe8;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.why-card-euklydia-academy .academy-title {
+  font-size: 22px;
+  color: white;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.why-card-euklydia-academy .acedemy-description {
+  font-size: 16px;
+  color: white;
+  line-height: 25px;
+}
+
+.why-card-euklydia-academy p {
+  margin: 0;
+  padding: 0;
+}
+
+.academy-program .title-academy-program {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.card-academy-program {
+  display: flex;
+  margin: 80px auto;
+}
+
+.img-academy-program {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 230px;
+}
+
+.card-academy-program-content {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #1cb0a0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-academy-program-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #004c4a;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.card-academy-program-content p.program-description {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  color: white;
+  text-align: justify;
+}
+
+.card-academy-program-content h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  color: #004c4a;
+  margin-bottom: 16px;
+}
+
+.card-academy-program-content .benifits-content {
+  display: flex;
+  gap: 16px;
+}
+
+.card-academy-program-content .benifits-content span {
+  font-weight: 900;
+  color: #5fffe8;
+  font-size: 16px;
+}
+
+.what-if-trainning {
+  margin-bottom: 80px;
+}
+
+.what-if-trainning .what-if-training-title {
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #5fffe8;
+}
+
+.what-if-trainning .what-if-training-title span {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  color: white;
+}
+
+.what-if-trainning .description-what-if-training {
+  font-size: 24px;
+  font-family: 700;
+  line-height: 40px;
+}
+
+.what-if-trainning .subtitle-section-what-if {
+  font-size: 32px;
+  font-family: 400;
+  color: #5fffe8;
+  margin-bottom: 32px;
+}
+
+.what-if-training-content {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.what-if-training-content .what-if-training-card {
+  width: 320px;
+  height: 300px;
+  background: linear-gradient(180deg, #004c4a 0%, #1cb0a0 100%);
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.what-if-training-card-img {
+  width: 320px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.what-if-training-content .what-if-training-card .card-title {
+  font-size: 24px;
+  color: #5fffe8;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.what-if-training-content .what-if-training-card .card-content {
+  font-size: 20px;
+  line-height: 30px;
+}

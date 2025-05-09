@@ -21,42 +21,44 @@ export const HeroSection = () => {
         "A pioneering AI-driven startup specializing in AI transformation, reinventing traditional businesses through data, automation, and predictive intelligence.",
     },
     {
-      title: "Our Unique Advantage",
-      number: "02",
-      backgroundImage: "/ai-euklydia/images/home/02.png",
-      link: "/green-tech",
-      description:
-        "Your business benefits from our tailored strategies, precise targeting, and optimized funnels for effective marketing campaigns.",
-    },
-    {
       title: "Our Solutions",
-      number: "03",
+      number: "02",
       backgroundImage: "/ai-euklydia/images/home/03.png",
       link: "/service",
       description:
         "We enhance brand tracking, predict customer behavior, and boost digital presence with our in-house AI.",
     },
+
     {
       title: "GreenTech",
-      number: "04",
+      number: "03",
       backgroundImage: "/ai-euklydia/images/home/05.png",
-      link: "/our-dna",
+      link: "/GreenTech",
       description:
         "We embrace a holistic, eco-conscious approach that integrates advanced AI technologies while minimizing our carbon footprint.",
     },
     {
       title: "Euklydia academy",
-      number: "05",
+      number: "04",
       backgroundImage: "/ai-euklydia/images/home/04.png",
-      link: "/green",
+      link: "/academy",
       description:
         "Euklydia Academy empowers professionals with AI-driven skills, fostering autonomy to lead transformation, embrace innovation, and stay competitive in the digital era.",
     },
     {
+      title: "Our Unique Advantage",
+      number: "05",
+      backgroundImage: "/ai-euklydia/images/home/02.png",
+      link: "/our-value",
+      description:
+        "Your business benefits from our tailored strategies, precise targeting, and optimized funnels for effective marketing campaigns.",
+    },
+
+    {
       title: "We're Here for You",
       number: "06",
       backgroundImage: "/ai-euklydia/images/home/06.png",
-      link: "/service",
+      link: "/contact",
       description:
         "Your success drives us—reach out with any questions. We're here to help you thrive!",
     },

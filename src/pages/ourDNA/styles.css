@@ -1,6 +1,6 @@
 .sticky-background {
   top: 0; /* or any offset from the top */
-  background-image: url("/public//images//our-dna/DNA.png"); /* Replace with your image path */
+  background-image: url("/public//images/our-dna/DNA.png"); /* Replace with your image path */
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -9,12 +9,12 @@
   padding-top: 130px;
   padding-bottom: 32px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .euklydia-dna {
   padding-top: 111px;
+  width: 996px;
+  margin: auto;
 }
 
 .euklydia-dna-img-container {
@@ -22,7 +22,7 @@
 }
 
 .euklydia-dna-card {
-  position: absolute;
+  /* position: absolute; */
   background: linear-gradient(180deg, #5fffe8 0%, #39998b 100%);
   display: flex;
   align-items: center;
@@ -34,6 +34,11 @@
   min-width: 168px;
   justify-content: center;
   animation: wiggleRight 2s infinite ease-in-out;
+}
+
+.euklydia-dna-card-container {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .euklydia-dna-card .expert {
@@ -55,12 +60,13 @@
 
 .dna-card {
   background: linear-gradient(359.81deg, #004c4a 0.16%, #39998b 99.84%);
-  transition: opacity 0.3s;
   min-height: 373px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
 }
 
 .dna-card .dna-card-title {
@@ -69,6 +75,7 @@
   font-weight: 900;
   position: relative;
   top: 12px;
+  text-align: center;
 }
 
 .dna-card .dna-card-description {
@@ -78,39 +85,17 @@
   text-align: justify;
 }
 
-.dna-card.active {
-  background: rgba(28, 176, 160, 1);
-}
-
 .dna-card::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 0%;
-  background: rgba(28, 176, 160, 1);
+  background: linear-gradient(180deg, #004c4a 0%, #0c4a43 100%);
   z-index: -1;
   transition: all 0.3s ease-in-out;
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.dna-card:hover::before {
-  height: 100%;
-}
-
-.dna-card:hover .dna-card-title,
-.dna-card.active .dna-card-title {
-  color: rgba(0, 76, 74, 1);
-}
-
-.dna-card.active:hover,
-.dna-card:hover {
-  background: transparent;
-}
-
-.dna-card.active:hover::before {
-  background: linear-gradient(359.81deg, #004c4a 0.16%, #39998b 99.84%);
 }
 
 .dna-card.active:hover .dna-card-title {
@@ -119,24 +104,30 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  left: 50%;
-  background-color: rgba(0, 76, 74, 1);
+  top: 28px;
+  background-color: transparent;
   padding: 20px;
   border-radius: 50%;
-  color: white;
+  color: #5fffe8;
+  border: 1px solid #5fffe8;
 }
 
 .swiper-button-prev {
-  left: 380px;
+  left: 45%;
 }
 
 .swiper-button-next {
-  left: 780px;
+  right: 45%;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 22px !important;
+}
+
+.dna-swiper-slide {
+  width: 376px;
+  border-radius: 16px;
 }
 
 .dna-success-container {
@@ -151,7 +142,25 @@
   color: rgba(95, 255, 232, 1);
 }
 
+.dna-success-container span:first-child {
+  width: 340px;
+}
+
 .dna-container {
   max-width: 1200px;
   margin: auto;
+  padding-top: 140px;
+}
+
+.dna-card .img-dna-card {
+  width: 96px;
+  height: 96px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
 }

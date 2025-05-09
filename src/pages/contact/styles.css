@@ -1,0 +1,54 @@
+.contact-background {
+  top: 0; /* or any offset from the top */
+  background-image: url("/public//images/contact/contact.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Set a height for the div */
+  z-index: -1; /* Optional: keeps it above other elements */
+  padding-top: 130px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-contact {
+  width: 996px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-contact .card-contact {
+  background: linear-gradient(180deg, #004c4a 0%, #39998b 100%);
+  width: 207px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.container-contact .card-contact .title-card-contact {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.container-contact .card-contact .description-card-contact {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  color: #5fffe8;
+  margin: 0;
+  padding: 0;
+}
+
+.container-contact .card-contact .img-card-contact {
+  height: 114px;
+  width: 114px;
+}

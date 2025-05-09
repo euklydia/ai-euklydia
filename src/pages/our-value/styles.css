@@ -1,0 +1,252 @@
+.ourValue-background {
+  top: 0; /* or any offset from the top */
+  background-image: url("/images/our-value/our-value-bg.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Set a height for the div */
+  z-index: -1; /* Optional: keeps it above other elements */
+  padding-top: 130px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.ourValue-container {
+  width: 996px;
+  margin: auto;
+}
+
+.section-title-ourvalue {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 25px;
+  color: #5fffe8;
+}
+
+.section-description-ourValue {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: white;
+  margin: 0 0 56px;
+  padding: 0;
+}
+
+.section-spacing-ourValue {
+  margin-block: 80px;
+}
+
+.content-ourValue-scalable {
+  display: flex;
+  justify-content: space-between;
+  gap: 72px;
+  margin: 0 0 56px;
+  padding: 0 32px;
+}
+
+.content-ourValue-scalable .card-scalable {
+  border-radius: 32px;
+  display: flex;
+  flex: 1;
+  background-color: #5fffe8;
+  justify-content: center;
+}
+
+.card-scalable-img {
+  background-color: #5fffe8;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  padding-left: 6px;
+}
+
+.content-ourValue-scalable .card-scalable img {
+  height: 66px;
+  width: 66px;
+}
+
+.card-scalable-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.content-ourValue-scalable .card-scalable-text::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(90deg, #1cb0a0 0%, #0c4a43 100%);
+  border-radius: 32px;
+  left: 8px;
+}
+
+.card-scalable-text p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  padding-left: 32px;
+}
+
+.ourValue-AI-path-title {
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 100%;
+  color: white;
+  margin-top: 32px;
+}
+
+.ourValue-AI-path-title span {
+  color: #5fffe8;
+}
+
+.ourValue-AI-path-description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 905px;
+  margin-bottom: 48px;
+}
+
+.ourValue-AI-path-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ourValue-AI-path-cards .ourValue-AI-path-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #004c4a 0%, #5fffe8 100%);
+  gap: 32px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.ourValue-AI-path-cards .ourValue-AI-path-card img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.ourValue-AI-path-card-text {
+  display: flex;
+  gap: 8px;
+}
+
+.ourValue-AI-path-cards .ourValue-AI-path-card .ourValue-AI-path-card-text {
+}
+
+.title-ourValue-AI-path-card-text {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: justify;
+  color: #5fffe8;
+  margin: 0 0 12px;
+  padding: 0;
+}
+.title-ourValue-AI-path-card-description {
+  font-size: 24px;
+  color: white;
+  text-align: justify;
+  line-height: 32px;
+}
+
+.ourValue-AI-path-card-text span {
+  top: 0;
+  right: 8px;
+  font-weight: 900;
+  font-size: 64px;
+  -webkit-text-stroke: 1px var(--white);
+  color: transparent;
+  top: -32px;
+  position: relative;
+}
+
+.initiative-text-ourValue-AI-path {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 48px 0;
+}
+
+.section-promise-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100%;
+  color: #5fffe8;
+  margin: 0;
+}
+
+.section-promise-subtitle {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 100%;
+  color: white;
+}
+
+.section-promise-call-to-action-text {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.our-promise-cards-content {
+  display: flex;
+  gap: 32px;
+}
+
+.our-promise-card {
+  background: linear-gradient(180deg, #1cb0a0 0%, #004c4a 100%);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  height: 150px;
+  text-align: center;
+  padding: 16px;
+}
+
+.our-promise-card p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #5fffe8;
+}
+
+.cards-ourValue-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.cards-ourValue-hero .card-ourValue-hero {
+  flex: 1;
+  position: relative;
+}
+
+.cards-ourValue-hero .card-ourValue-hero p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.section-why-diffrent-title {
+  color: #5fffe8;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 30px;
+  margin-bottom: 48px;
+}

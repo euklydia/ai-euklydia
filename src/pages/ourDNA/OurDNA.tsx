@@ -1,39 +1,63 @@
 import { Header, MetaHead } from "../../components";
 import { Footer } from "../../components/footer/Footer";
 import { ourDNAHead } from "../../data/SEO";
-import DNA from "../../assets/images/our-dna/euklydia-dna.jpg";
 import MAPS from "../../assets/images/our-dna/maps.png";
 import SUCCESS from "../../assets/images/our-dna/Success.jpg";
 import START from "../../assets/images/our-dna/Calque_1.png";
+import GreentechInnovation from "../../assets/images/our-dna/Greentech-Innovation.png";
+import Scalability from "../../assets/images/our-dna/Scalability-at-OurCore.png";
+import ScienceDriven from "../../assets/images/our-dna/Science-Driven.png";
+import LifeTimeLearning from "../../assets/images/our-dna/Lifelong Learning.png";
+import Diversity from "../../assets/images/our-dna/Diversity-&-Inclusion.png";
+import Agility from "../../assets/images/our-dna/Agility-&-Creativity.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Navigation } from "swiper/modules";
 
 import "./styles.css";
+import CountUp from "react-countup";
 const cards = [
   {
     id: "00",
-    title: "Greentech Innovation ",
+    title: "Greentech Innovation",
+    imgsrc: GreentechInnovation,
     description:
       "The future belongs to companies that combine performance with responsibility. By integrating AI and cloud computing with eco-efficient solutions, we help reduce carbon footprints—partnering with tech leaders like Google and Meta to promote sustainable practices",
   },
   {
     id: "01",
-    title: "Greentech Innovation",
+    title: "Scalability at Our Core",
+    imgsrc: Scalability,
     description:
-      "The future belongs to companies that combine performance with responsibility. By integrating AI and cloud computing with eco-efficient solutions, we help reduce carbon footprints—partnering with tech leaders like Google and Meta to promote sustainable practices",
+      "Scalability is at the heart of every AI solution we build. We design systems that grow with your business—adapting to new challenges, increasing data volumes, and evolving technologies without compromising performance or sustainability.",
   },
   {
     id: "02",
-    title: "Greentech Innovation",
+    title: "Science-Driven",
+    imgsrc: ScienceDriven,
     description:
-      "The future belongs to companies that combine performance with responsibility. By integrating AI and cloud computing with eco-efficient solutions, we help reduce carbon footprints—partnering with tech leaders like Google and Meta to promote sustainable practices",
+      "We bridge the gap between scientific innovation and business impact. With R&D at our core, we transform cutting-edge research into scalable AI solutions—proving that every successful company is built on scientific excellence.",
   },
   {
     id: "03",
-    title: "Greentech Innovation",
+    title: "Lifelong Learning",
+    imgsrc: LifeTimeLearning,
     description:
-      "The future belongs to companies that combine performance with responsibility. By integrating AI and cloud computing with eco-efficient solutions, we help reduce carbon footprints—partnering with tech leaders like Google and Meta to promote sustainable practices",
+      "Excellence is fueled by continuous learning. We invest in knowledge-sharing and train future generations to fully harness the power of AI and emerging technologies.",
+  },
+  {
+    id: "04",
+    title: "Diversity & Inclusion",
+    imgsrc: Diversity,
+    description:
+      "Bold ideas come from diverse minds. We foster an inclusive culture where every perspective contributes to innovative, tailored solutions for our clients' unique challenges.",
+  },
+  {
+    id: "05",
+    title: "Agility & Creativity",
+    imgsrc: Agility,
+    description:
+      "In an ever-changing world, adaptability is key. By blending innovation with data-driven strategy, we help you stay responsive to market shifts and emerging technologies.",
   },
 ];
 
@@ -44,16 +68,22 @@ export const OurDNA = () => {
       <div className="smooth-scroll-container">
         <Header />
         <div className="sticky-background">
-          <div className="row euklydia-dna">
-            <div className="col-lg-5 euklydia-dna-img-container">
-              <img src={DNA} alt="Euklydia DNA" />
+          <div className="euklydia-dna">
+            {/* <div className="col-lg-5 euklydia-dna-img-container">
               <div className="euklydia-dna-card">
-                <span style={{ fontSize: "40px", fontWeight: "700" }}>15+</span>
+                <div style={{ display: "flex" }}>
+                  <CountUp
+                    end={15}
+                    enableScrollSpy
+                    style={{ fontSize: "40px", fontWeight: "700" }}
+                  />
+                  <span style={{ fontSize: "40px", fontWeight: "700" }}>+</span>
+                </div>
                 <span className="expert">years of AI expertsie</span>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-lg-7" style={{ paddingLeft: "32px" }}>
+            <div style={{ paddingLeft: "32px" }}>
               <h2 className="title">
                 <span style={{ fontSize: "96px" }}>Adapt</span>{" "}
                 <strong style={{ color: "#1CB0A0", fontSize: "64px" }}>
@@ -64,7 +94,7 @@ export const OurDNA = () => {
                   Fall Behind
                 </p>
               </h2>
-              <p style={{ width: "450px " }}>
+              <p style={{ fontSize: "24px" }}>
                 Businesses today face rising complexity and inefficiencies.
                 <br />
                 Euklydia empowers them with AI to automate tasks, boost
@@ -72,6 +102,19 @@ export const OurDNA = () => {
                 competitiveness, and growth in a world where adaptability means
                 survival.
               </p>
+            </div>
+            <div className="euklydia-dna-card-container">
+              <div className="euklydia-dna-card">
+                <div style={{ display: "flex" }}>
+                  <CountUp
+                    end={15}
+                    enableScrollSpy
+                    style={{ fontSize: "40px", fontWeight: "700" }}
+                  />
+                  <span style={{ fontSize: "40px", fontWeight: "700" }}>+</span>
+                </div>
+                <span className="expert">years of AI expertsie</span>
+              </div>
             </div>
           </div>
         </div>
@@ -102,17 +145,17 @@ export const OurDNA = () => {
               These foundational pillars guide every solution we design
             </p>
           </div>
-          <div style={{ paddingTop: "80px" }}>
+          <div style={{ position: "relative" }}>
             <Swiper
               modules={[Navigation]}
-              spaceBetween={0}
+              spaceBetween={"32px"}
               slidesPerView={"auto"}
               navigation
               loop={true}
               className="my-4 dna-container"
             >
               {cards.map((card, index) => (
-                <SwiperSlide key={card.id} style={{ width: "400px" }}>
+                <SwiperSlide key={card.id} className="dna-swiper-slide">
                   <div
                     className={`dna-card text-white ${
                       index % 2 === 1 ? "active" : ""
@@ -135,6 +178,7 @@ export const OurDNA = () => {
                     // }
                   >
                     <div>
+                      <img src={card.imgsrc} alt="" className="img-dna-card" />
                       <h5 className="dna-card-title">{card.title}</h5>
                       <p className="dna-card-description">{card.description}</p>
                     </div>
@@ -183,7 +227,7 @@ export const OurDNA = () => {
                 </span>
               </div>
             </div>
-            <p style={{ width: "400px", paddingTop: "16px" }}>
+            <p style={{ maxWidth: "600px", paddingTop: "16px" }}>
               Our expertise supports you at every stage of your digital
               transformation. With a tailored approach, we streamline your
               processes, unlock new
@@ -195,18 +239,30 @@ export const OurDNA = () => {
           </div>
         </div>
 
-        <section style={{ padding: "80px" }}>
+        <section
+          style={{
+            padding: "80px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <h2
             style={{
               textAlign: "center",
               fontSize: "64px",
               fontWeight: "700",
-              marginBottom: "80px",
+              marginBottom: "40px",
             }}
           >
             Our Expertise
           </h2>
-          <img src={MAPS} alt="Euklydia international" />
+          <img
+            src={MAPS}
+            alt="Euklydia international"
+            style={{ maxWidth: "850px" }}
+          />
         </section>
       </div>
 

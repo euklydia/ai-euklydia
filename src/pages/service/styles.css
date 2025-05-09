@@ -1,0 +1,267 @@
+.service-hero-background {
+  top: 0; /* or any offset from the top */
+  background-image: url("/public/images/service/ai-services.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Set a height for the div */
+  z-index: -1; /* Optional: keeps it above other elements */
+  padding-top: 130px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.service-container {
+  width: 1012px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.workflow-service-container {
+  max-width: 1012px;
+  margin: auto;
+  text-align: center;
+}
+
+.workflow-service-container h2 {
+  margin: 80px 0;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.cards-workflow-content {
+  width: 996px;
+  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cards-workflow-content .card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-workflow-content .card-row .card-workflow-service {
+  width: 484px;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #5fffe8;
+  position: relative;
+  display: flex;
+  padding: 8px;
+}
+
+.cards-workflow-content .card-row .card-workflow-service img {
+  border-radius: 8px;
+  width: 193px;
+  height: 193px;
+}
+
+.cards-workflow-content .card-row .card-workflow-service .workflow-description {
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 32px;
+}
+
+.cards-workflow-content
+  .card-row
+  .card-workflow-service
+  .workflow-description
+  p {
+  text-align: left;
+}
+
+.client-favorite-container {
+  width: 960px;
+  margin: 0 auto 80px;
+}
+
+.client-favorite-container h2 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.client-favorite-container p.favorite-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0 0 48px;
+  font-weight: 700;
+}
+
+.client-favorite-container p.favorite-subtitle-turn {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.client-favorite-container .client-favorite-content {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.client-favorite-container .card-favorite-content img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.client-favorite-container
+  .card-favorite-content
+  .client-favorite-container
+  .card-favorite-content
+  p {
+  margin: 0;
+  padding: 0;
+}
+
+.favorite-title {
+  font-size: 24px;
+  color: #5fffe8;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.favorite-subtitle {
+  font-size: 18px;
+  color: white;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.client-favorite-container .card-favorite-content .favorite-description {
+  font-size: 20px;
+  color: white;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.content-card-favorite-absolute {
+  width: 555px;
+  height: 269px;
+  border-radius: 16px;
+  background-color: #5fffe8;
+  position: relative;
+  padding: 32px 48px;
+}
+
+.content-card-favorite-absolute p {
+  margin: 0;
+  padding: 0;
+}
+
+.content-card-favorite-absolute .absolute-number {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  background-color: #004c4a;
+  border-radius: 100%;
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  height: 72px;
+  width: 72px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.service-Benefits {
+  margin: auto;
+  width: 996px;
+  margin-bottom: 80px;
+}
+
+.service-benifits-container {
+  background: linear-gradient(90deg, #5fffe8 0%, #39998b 100%);
+  border-radius: 16px;
+  height: 176px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.service-benifits-container .benifits-title {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: rgba(0, 76, 74, 1);
+  margin-bottom: 8px;
+}
+
+.service-benifits-container .benifits-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+  color: rgba(0, 76, 74, 1);
+}
+
+.service-benifits-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.section-agents-benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 996px;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.benifits-agents-content p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.ai-agent-table-container {
+  width: 996px;
+  margin: 80px auto;
+}
+
+.btn-book-demo {
+  background-color: #5fffe8;
+  border-radius: 999px;
+  width: 200px;
+  padding: 20px 0;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-book-demo p {
+  color: #004c4a;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
