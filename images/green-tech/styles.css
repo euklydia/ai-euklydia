@@ -1,0 +1,178 @@
+.greenTech-background {
+  top: 0; /* or any offset from the top */
+  background-image: url("/public//images/green-tech/greenTech.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Set a height for the div */
+  z-index: -1; /* Optional: keeps it above other elements */
+  padding-top: 130px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greean-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 80px;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.greean-content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.Greener-card {
+  width: 320px;
+  min-height: 430px;
+  background: linear-gradient(180deg, #004c4a 0%, #318f82 100%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Greener-xl-card {
+  width: 370px;
+  height: 490px;
+  position: relative;
+}
+
+.content-description-greener {
+  position: absolute;
+  width: 100%;
+  background-color: #5fffe8;
+  padding: 16px;
+  bottom: 0;
+}
+
+.content-description-greener p {
+  color: #004c4a;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.Green-approach {
+  display: flex;
+  gap: 32px;
+  max-width: 1025px;
+  margin: 80px auto;
+  flex-direction: column;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.Green-approach h2,
+.Green-approach h3,
+.Green-approach p {
+  margin: 0;
+  padding: 0;
+}
+
+.green-tech-solution-content {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  margin: 32px auto 80px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.header-green-tech-solution h4 {
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+}
+
+.header-green-tech-solution strong {
+  color: #5fffe8;
+}
+
+.card-green-tech-solution {
+  background: linear-gradient(180deg, #002825 0%, #008e83 100%);
+  width: 272px;
+  height: 236px;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.card-green-tech-solution .green-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 38px;
+  margin-bottom: 12px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.card-green-tech-solution .green-title span {
+  color: #5fffe8;
+}
+.card-green-tech-solution img {
+  width: 100px;
+  margin-bottom: 16px;
+  position: relative;
+  position: absolute;
+  right: -30px;
+  top: -50px;
+}
+.card-green-tech-solution .description {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  text-align: left;
+}
+
+.cards-green-tech-solution {
+  display: flex;
+  gap: 32px;
+}
+
+.designing-greener-container {
+  width: 1020px;
+  margin: auto;
+}
+
+.business-impact-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.business-impact-card {
+  width: 425px;
+  background: linear-gradient(180deg, #1cb0a0 0%, #004c4a 100%);
+  padding: 48px 32px;
+  border-radius: 8px;
+}
+
+.imact-bg-01 {
+  background-image: url("/public//images/green-tech/"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
