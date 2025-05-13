@@ -8,6 +8,8 @@ import { Academy } from "../pages/academy/Academy";
 import { Contact } from "../pages/contact/Contact";
 import { OurValue } from "../pages/our-value/OurValue";
 import { Blog01 } from "../pages/blogs/blog01";
+import { Blog02 } from "../pages/blogs/blog02";
+import { Blog03 } from "../pages/blogs/blog03";
 
 export const Routers = () => {
   return (
@@ -26,8 +28,9 @@ export const Routers = () => {
       ></Route>
       <Route
         path="/blog/AI-supports-mental-health"
-        element={<Blog01 />}
+        element={<Blog02 />}
       ></Route>
+      <Route path="/blog/low-cost-success" element={<Blog03 />}></Route>
     </Routes>
   );
 };

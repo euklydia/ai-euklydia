@@ -4,10 +4,10 @@ import BUSINES from "../../assets/images/services/Business.jpg";
 import HUMANRESSOURCES from "../../assets/images/services/Human-resources.jpg";
 import MARKETING from "../../assets/images/services/sales-and-marketing.jpg";
 import OPERATION from "../../assets/images/services/operation.jpg";
-import Table01 from "../../assets/images/services/table-01-ai-agent.png";
+// import Table01 from "../../assets/images/services/table-01-ai-agent.png";
 import Table02 from "../../assets/images/services/table-02-ai-agent.png";
 import AIAGENT01 from "../../assets/images/services/ai-agent-01.jpg";
-import AIAGENT02 from "../../assets/images/services/ai-agent-02.jpg";
+// import AIAGENT02 from "../../assets/images/services/ai-agent-02.jpg";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -208,7 +208,7 @@ export const Service = () => {
           </Link>
         </div>
 
-        <section className="client-favorite-container">
+        {/* <section className="client-favorite-container">
           <div className="client-favorite-content">
             <div className="content-card-favorite-absolute">
               <p
@@ -287,7 +287,7 @@ export const Service = () => {
           <Link to={"/contact"} className="btn-book-demo">
             <p>Book a Demo</p>
           </Link>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

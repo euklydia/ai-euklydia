@@ -126,3 +126,85 @@
   line-height: 32px;
   color: white;
 }
+
+.title-blog.left {
+  text-align: left;
+}
+
+.subtitle-blog.white {
+  color: white;
+}
+
+.linear-notRounded-bg {
+  background: linear-gradient(90deg, #1cb0a0 0%, #004c4a 100%);
+  padding: 16px;
+}
+
+.flex-blog-equal {
+  flex: 1.5 !important;
+}
+
+.card-catalyst-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.card-catalyst-content {
+  flex: 1;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #1cb0a0 0%, #004c4a 100%);
+  min-height: 200px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.card-catalyst-content p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 16px;
+  justify-content: end;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-catalyst-content img {
+  width: 160px;
+  position: relative;
+  top: -80px;
+  position: absolute;
+}
+
+.img-with-baya-blog {
+  margin-top: 32px;
+}
+
+.img-with-baya-blog img {
+  width: 80%;
+}
+
+.call-to-action-blog-description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.call-to-action-blog-description .call-to-action {
+  font-size: 18;
+  color: #5fffe8;
+  margin-top: 32px;
+}
+
+.call-to-action-blog-description .call-to-action strong {
+  font-size: 56px;
+  font-weight: 700;
+}

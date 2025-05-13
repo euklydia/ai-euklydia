@@ -2,17 +2,27 @@
 import { Link } from "react-router-dom";
 
 interface DataType {
-  toggleSubMenu2?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+  // toggleSubMenu2?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
   closeInfoBar?: () => void;
 }
 
-const MainMenuV2 = ({ toggleSubMenu2, closeInfoBar }: DataType) => {
+const MainMenuV2 = ({ closeInfoBar }: DataType) => {
   return (
     <>
       <ul className="simple-menu-list">
         <li>
-          <Link to="#">Home </Link>
-          <i className="fa fa-plus" onClick={toggleSubMenu2} />
+          <Link to="/our-dna" onClick={closeInfoBar}>
+            Our DNA
+          </Link>{" "}
+        </li>
+        <li>
+          <Link to="/service" onClick={closeInfoBar}>
+            Our Solutions{" "}
+          </Link>
+        </li>
+        {/* <li> */}
+        {/* <Link to="/">Home </Link> */}
+        {/* <i className="fa fa-plus" onClick={toggleSubMenu2} />
           <ul className="sub-menu">
             <li>
               <Link to="/" onClick={closeInfoBar}>
@@ -110,11 +120,11 @@ const MainMenuV2 = ({ toggleSubMenu2, closeInfoBar }: DataType) => {
                 </li>
               </ul>
             </li>
-          </ul>
-        </li>
-        <li>
-          <Link to="#">Blog </Link>
-          <i className="fa fa-plus" onClick={toggleSubMenu2} />
+          </ul> */}
+        {/* </li> */}
+        {/* <li> */}
+        {/* <Link to="#">Blog </Link> */}
+        {/* <i className="fa fa-plus" onClick={toggleSubMenu2} />
           <ul className="sub-menu">
             <li>
               <Link to="/blog-standard" onClick={closeInfoBar}>
@@ -146,16 +156,21 @@ const MainMenuV2 = ({ toggleSubMenu2, closeInfoBar }: DataType) => {
                 Blog Single With Sidebar
               </Link>
             </li>
-          </ul>
-        </li>
+          </ul> */}
+        {/* </li> */}
         <li>
-          <Link to="/services" onClick={closeInfoBar}>
-            Services{" "}
+          <Link to="/academy" onClick={closeInfoBar}>
+            Euklydia Academy
           </Link>
         </li>
         <li>
-          <Link to="/about-us" onClick={closeInfoBar}>
-            About
+          <Link to="/GreenTech" onClick={closeInfoBar}>
+            Green Tech
+          </Link>{" "}
+        </li>
+        <li>
+          <Link to="/GreenTech" onClick={closeInfoBar}>
+            Our Unique Advantage
           </Link>{" "}
         </li>
         <li>

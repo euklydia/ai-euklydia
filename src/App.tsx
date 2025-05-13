@@ -21,15 +21,22 @@ import "./assets/styles/style.css";
 import { useEffect, useState } from "react";
 import { Routers } from "./routers/Routers";
 import { Preloader } from "./components";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1200);
-  }, []);
+  }, [pathname]);
 
   return isLoading ? <Preloader /> : <Routers />;
 }
