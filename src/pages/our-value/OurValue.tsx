@@ -76,7 +76,7 @@ export const OurValue = () => {
                 <img src={CHECK} alt="" />
               </div>
               <div className="card-scalable-text">
-                <p>Modular architecture</p>
+                <p>No-code tools</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export const OurValue = () => {
                 <img src={CHECK} alt="" />
               </div>
               <div className="card-scalable-text">
-                <p>Modular architecture</p>
+                <p>Lean ops, high ROI</p>
               </div>
             </div>
           </div>

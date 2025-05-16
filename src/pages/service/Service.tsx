@@ -6,8 +6,8 @@ import MARKETING from "../../assets/images/services/sales-and-marketing.jpg";
 import OPERATION from "../../assets/images/services/operation.jpg";
 // import Table01 from "../../assets/images/services/table-01-ai-agent.png";
 import Table02 from "../../assets/images/services/table-02-ai-agent.png";
-import AIAGENT01 from "../../assets/images/services/ai-agent-01.jpg";
-// import AIAGENT02 from "../../assets/images/services/ai-agent-02.jpg";
+import AIAGENT01 from "../../assets/images/services/aiAgent-02.png";
+import Website from "../../assets/images/services/-website-00.png";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -45,7 +45,7 @@ export const Service = () => {
           </div>
         </div>
 
-        <section className="workflow-service-container">
+        {/* <section className="workflow-service-container">
           <h2>Our workflow: From Data to Impact</h2>
           <div className="cards-workflow-content">
             <div className="card-row">
@@ -114,6 +114,51 @@ export const Service = () => {
               </div>
             </div>
           </div>
+        </section> */}
+
+        <section className="new-workflow-service">
+          <h2 className="new-workflow-servise-title">
+            <span>Our workflow</span>
+            <br /> From Data to Impact
+          </h2>
+
+          <div className="new-workflow-cards-services">
+            <div className="new-workflow-card-service">
+              <div className="img-content">
+                <img src={BUSINES} alt="BUSINES" />
+              </div>
+              <div className="description-content">
+                <p>Strategy & Leadership</p>
+              </div>
+            </div>
+
+            <div className="new-workflow-card-service">
+              <div className="img-content">
+                <img src={MARKETING} alt="Marketing & Sales" />
+              </div>
+              <div className="description-content">
+                <p>Marketing & Sales</p>
+              </div>
+            </div>
+
+            <div className="new-workflow-card-service">
+              <div className="img-content">
+                <img src={HUMANRESSOURCES} alt="Human Resources" />
+              </div>
+              <div className="description-content">
+                <p>Human Resources</p>
+              </div>
+            </div>
+
+            <div className="new-workflow-card-service">
+              <div className="img-content">
+                <img src={OPERATION} alt="Operations and finance" />
+              </div>
+              <div className="description-content">
+                <p>Operations & finance</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="client-favorite-container">
@@ -122,35 +167,21 @@ export const Service = () => {
           </h2>
           <p className="favorite-subtitle">Proven. Powerful. Preferred.</p>
           <div className="client-favorite-content">
-            <div className="content-card-favorite-absolute">
-              <p
-                style={{
-                  fontSize: "64px",
-                  fontWeight: "700",
-                  color: "#004C4A",
-                  lineHeight: "100%",
-                  width: "306px",
-                  marginBottom: "8px",
-                }}
-              >
-                AI Agent
-              </p>
-
-              <p
-                style={{
-                  fontSize: "48px",
-                  color: "#004C4A",
-                  fontWeight: "700",
-                  lineHeight: "100%",
-                  width: "306px",
-                }}
-              >
-                For Website Engagement
-              </p>
-              <div className="absolute-number">1</div>
+            <div className="client-favorite-content-card left">
+              <div className="card-favorite-content ">
+                <img src={AIAGENT01} alt="For Website Engagement" />
+              </div>
+              <div className="content-card-favorite-absolute right">
+                <p>For Website Engagement</p>
+              </div>
             </div>
-            <div className="card-favorite-content">
-              <img src={AIAGENT01} alt="For Website Engagement" />
+            <div className="client-favorite-content-card right">
+              <div className="content-card-favorite-absolute">
+                <p>AI Agent</p>
+              </div>
+              <div className="card-favorite-content">
+                <img src={Website} alt="For Website Engagement" />
+              </div>
             </div>
           </div>
           <p className="favorite-subtitle-turn">

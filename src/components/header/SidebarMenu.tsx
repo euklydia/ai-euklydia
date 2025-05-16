@@ -3,7 +3,7 @@ import logoLight from "../../assets/icons/logo.png";
 import MainMenuV2 from "./MainMenuV2";
 import { SocialShareV3 } from "../socialMedia";
 import { HeaderNewsLetter } from "../newLetter/HeaderNewsLetter";
-import { useSubMenuToggleV2 } from "../../hook";
+// import { useSubMenuToggleV2 } from "../../hook";
 
 interface DataType {
   openMenu?: () => void;
@@ -13,7 +13,7 @@ interface DataType {
 }
 
 const SidebarMenu = ({ isInfoOpen, closeInfoBar, openInfoBar }: DataType) => {
-  const toggleSubMenu2 = useSubMenuToggleV2();
+  // const toggleSubMenu2 = useSubMenuToggleV2();
 
   return (
     <>
@@ -39,7 +39,7 @@ const SidebarMenu = ({ isInfoOpen, closeInfoBar, openInfoBar }: DataType) => {
             </Link>
             <div className="widget">
               <div className="logo">
-                <Link to="/home-2">
+                <Link to="/">
                   <img src={logoLight} alt="Logo" />
                 </Link>
               </div>
@@ -50,7 +50,7 @@ const SidebarMenu = ({ isInfoOpen, closeInfoBar, openInfoBar }: DataType) => {
                   <div className="side-navbar-inner">
                     <div className="simple-menu">
                       <MainMenuV2
-                        toggleSubMenu2={toggleSubMenu2}
+                        // toggleSubMenu2={toggleSubMenu2}
                         closeInfoBar={closeInfoBar}
                       />
                     </div>

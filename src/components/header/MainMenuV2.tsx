@@ -163,11 +163,11 @@ const MainMenuV2 = ({ closeInfoBar }: DataType) => {
             Euklydia Academy
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/GreenTech" onClick={closeInfoBar}>
             Green Tech
           </Link>{" "}
-        </li>
+        </li> */}
         <li>
           <Link to="/GreenTech" onClick={closeInfoBar}>
             Our Unique Advantage
