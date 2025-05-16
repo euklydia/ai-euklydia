@@ -1,6 +1,6 @@
 .service-hero-background {
   top: 0; /* or any offset from the top */
-  background-image: url("/public/images/service/ai-services.png"); /* Replace with your image path */
+  background-image: url("/images/service/ai-services.png"); /* Replace with your image path */
   background-size: cover; /* Cover the entire div */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
